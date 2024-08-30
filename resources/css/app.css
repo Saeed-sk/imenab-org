@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .glass {
+        background: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 8px 32px 0 rgba(214, 215, 187, 0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .login-background {
+        background: url("/public/images/loginBackground.svg") center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    .selectInput {
+        @apply pr-7 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+    }
+
+
+}
+.css-b62m3t-container{
+    border:none !important;
+}
+.selectInputSearch__control{
+   border-radius: 20px !important;
+    padding: 3px;
+}
+
+.datepickerInput > input{
+    @apply pr-7 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+}
